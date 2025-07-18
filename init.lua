@@ -1,3 +1,6 @@
+-- TODO: auto close parenthesis, braces, brackets on <enter>
+-- TODO: reformat warning messages
+
 -- global variables
 require 'user.settings'
 
@@ -19,20 +22,9 @@ require 'user.autocmds'
 require 'core.lazy'
 
 require('lazy').setup({
+  -- FIX: figure out why this thing doesn't work
   'NMAC427/guess-indent.nvim',
-  -- Adds git related signs to the gutter, as well as utilities for managing changes
-  {
-    'lewis6991/gitsigns.nvim',
-    opts = {
-      signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
-        changedelete = { text = '~' },
-      },
-    },
-  },
+
   -- Useful plugin to show you pending keybinds.
   {
     'folke/which-key.nvim',
@@ -659,7 +651,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
-  -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
