@@ -1,4 +1,3 @@
--- TODO: auto close parenthesis, braces, brackets on <enter>
 -- TODO: reformat warning messages
 
 -- global variables
@@ -22,13 +21,11 @@ require 'user.autocmds'
 require 'core.lazy'
 
 require('lazy').setup({
-  -- FIX: figure out why this thing doesn't work
-  'NMAC427/guess-indent.nvim',
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.autopairs',
+  require 'kickstart.plugins.guess-indent',
   require 'kickstart.plugins.nvim-treesitter',
   require 'kickstart.plugins.mini',
   require 'kickstart.plugins.todo-comments',
