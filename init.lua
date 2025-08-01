@@ -21,6 +21,7 @@ require 'user.autocmds'
 require 'core.lazy'
 
 require('lazy').setup({
+  require 'custom.plugins.nvim-emmet',
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.neo-tree',

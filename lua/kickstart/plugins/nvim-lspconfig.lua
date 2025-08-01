@@ -104,6 +104,7 @@ return {
       ts_ls = {},
       eslint = {},
       emmet_language_server = {},
+      cssls = {},
       lua_ls = {
         settings = {
           Lua = {
