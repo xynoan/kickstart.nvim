@@ -103,6 +103,7 @@ return {
     local servers = {
       ts_ls = {},
       eslint = {},
+      emmet_language_server = {},
       lua_ls = {
         settings = {
           Lua = {
