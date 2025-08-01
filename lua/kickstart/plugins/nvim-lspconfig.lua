@@ -103,7 +103,13 @@ return {
     local servers = {
       ts_ls = {},
       eslint = {},
-      emmet_language_server = {},
+      emmet_language_server = {
+        settings = {
+          css = { validate = false },
+          less = { validate = false },
+          scss = { validate = false },
+        },
+      },
       cssls = {},
       lua_ls = {
         settings = {
@@ -123,6 +129,7 @@ return {
       'black',
       'prettierd',
       'prettier',
+      'djlint',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
