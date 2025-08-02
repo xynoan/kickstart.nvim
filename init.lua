@@ -24,6 +24,7 @@ require('lazy').setup({
   require 'custom.plugins.nvim-highlight-colors',
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.nvim-web-devicons',
   require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.guess-indent',
