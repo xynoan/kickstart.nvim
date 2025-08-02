@@ -10,7 +10,6 @@ require 'user.options'
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
-
 -- keymaps
 require 'user.keymaps'
 
@@ -22,6 +21,7 @@ require 'core.lazy'
 
 require('lazy').setup({
   require 'custom.plugins.nvim-emmet',
+  require 'custom.plugins.nvim-highlight-colors',
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.neo-tree',
