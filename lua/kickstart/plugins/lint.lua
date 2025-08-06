@@ -10,7 +10,6 @@ return {
         typescriptreact = { 'eslint_d' },
         lua = { 'selene' },
         html = { 'djlint' },
-        php = { 'intelephense' },
       }
       local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })
       vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWritePost', 'InsertLeave' }, {
