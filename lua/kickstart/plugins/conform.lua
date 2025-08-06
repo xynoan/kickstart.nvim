@@ -31,6 +31,7 @@ return {
       python = { 'isort', 'black' },
       javascript = { 'prettierd', 'prettier', stop_after_first = true },
       html = { 'djlint' },
+      php = { 'intelephense' },
     },
   },
 }
